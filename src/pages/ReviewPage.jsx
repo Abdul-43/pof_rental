@@ -20,20 +20,20 @@ export default function ReviewPage({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-4">
         <div>
           <span className="text-xs font-bold text-gray-500 block">STEP 5 OF 5</span>
-          <h1 className="text-2xl font-bold text-gray-900">REVIEW AND CONFIRM</h1>
+          <h1 className="text-2xl font-bold">REVIEW AND CONFIRM</h1>
         </div>
 
         <div className="flex items-center space-x-4 bg-white p-3 rounded border border-gray-200">
           <div>
             <span className="text-[10px] text-gray-400 font-bold block">TOTAL PRICE</span>
-            <div className="text-lg font-bold text-gray-900">
+            <div className="text-lg font-bold">
               {formatPrice(totals.grandTotal)} AED
             </div>
           </div>
           <button
             type="button"
             onClick={onOpenModal}
-            className="px-3 py-1.5 border border-gray-300 text-gray-800 text-xs font-bold rounded hover:bg-gray-50"
+            className="px-3 py-1.5 border border-gray-300 text-xs font-bold rounded hover:bg-gray-50"
           >
             Price details
           </button>
@@ -41,7 +41,7 @@ export default function ReviewPage({
       </div>
 
       <div className="bg-white rounded-xl border border-gray-200 p-6 space-y-5">
-        <h3 className="text-base font-bold text-gray-900 border-b border-gray-100 pb-2">
+        <h3 className="text-base font-bold border-b border-gray-100 pb-2">
           Selected Vehicle
         </h3>
 
@@ -51,7 +51,7 @@ export default function ReviewPage({
             alt={car.name}
             className="w-full h-full object-contain max-h-[440px]"
           />
-          <h4 className="font-bold text-gray-900 text-xl mt-3">
+          <h4 className="font-bold text-xl mt-3">
             {car.name} ({car.year})
           </h4>
           <p className="text-xs text-gray-500 mt-0.5">
@@ -103,7 +103,7 @@ export default function ReviewPage({
         <div className="pt-4 border-t-2 border-black flex items-center justify-between">
           <div>
             <span className="text-xs font-bold text-gray-400 block">GRAND TOTAL</span>
-            <div className="text-2xl font-bold text-gray-900">
+            <div className="text-2xl font-bold">
               {formatPrice(totals.grandTotal)} AED
             </div>
           </div>
